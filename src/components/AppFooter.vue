@@ -118,11 +118,10 @@ export default {
 
 
 footer {
-    background-image: url(/img/footer-bg.jpg);
-
-    color: white;
-
     position: relative;
+
+    background-image: url(/img/footer-bg.jpg);
+    color: white;
 
     .wrapper {
         position: relative;
@@ -131,20 +130,26 @@ footer {
         gap: 20px;
 
         padding-block: 40px;
-        font-size: 12px;
+        font-size: 14px;
 
         .lists {
             display: flex;
             flex-direction: column;
 
+            line-height: 25px;
+
             h3 {
-                font-size: 16px;
+                font-size: 18px;
                 margin-bottom: 20px;
             }
 
             ul {
                 list-style-type: none;
                 padding-bottom: 20px;
+
+                li {
+                    color: $secondaryColor;
+                }
             }
 
 
@@ -154,9 +159,11 @@ footer {
 
     #logo-bg {
         position: absolute;
-        top: -100px;
+        top: -70px;
         right: 0;
         z-index: 1;
+
+        transform: scale(1.1);
 
     }
 

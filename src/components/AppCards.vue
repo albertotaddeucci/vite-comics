@@ -58,6 +58,8 @@ export default {
 
 <style lang="scss">
 @use '../styles/variables' as *;
+@use '../styles/mixin' as *;
+
 
 #cards {
     background-color: $primaryColor;
@@ -67,8 +69,7 @@ export default {
     z-index: 2;
 
     .wrapper {
-        max-width: 1260px;
-        margin-inline: auto;
+        @include centered;
         display: flex;
 
         .card {
@@ -81,6 +82,10 @@ export default {
 
             img {
                 width: 50px;
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }

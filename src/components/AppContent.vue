@@ -22,7 +22,7 @@ export default {
     <AppCards></AppCards>
 </template>
 
-<style = lang="scss">
+<style lang="scss">
 @use '../styles/mixin' as *;
 
 #content {

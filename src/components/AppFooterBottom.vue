@@ -74,9 +74,7 @@ export default {
 
 
     button {
-        padding: 10px;
-        border: 2px solid $primaryColor;
-        background-color: transparent;
+        @include btn-primary($primaryColor)
     }
 }
 </style>

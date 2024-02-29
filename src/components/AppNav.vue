@@ -22,7 +22,7 @@ export default {
             <div>
                 <ul>
                     <li v-for="link in links">
-                        {{ link }}
+                        <a href="">{{ link }}</a>
                     </li>
                 </ul>
             </div>
@@ -33,6 +33,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/variables' as *;
 @use '../styles/mixin' as *;
 // 
 
@@ -46,7 +47,7 @@ export default {
     align-items: center;
 
 
-    padding-block: 20px;
+
 
     ul {
         display: flex;
@@ -54,6 +55,29 @@ export default {
 
         list-style: none;
         text-transform: uppercase;
+
+
+        a {
+            padding-block: 41px;
+
+            text-decoration: none;
+
+            &.active {
+                color: $primaryColor;
+                border-bottom: 5px solid $primaryColor;
+
+            }
+
+            &:hover {
+                color: $primaryColor;
+                cursor: pointer;
+
+                border-bottom: 5px solid $primaryColor;
+
+            }
+
+        }
+
     }
 
 }
