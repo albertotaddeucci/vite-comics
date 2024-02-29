@@ -42,6 +42,8 @@ export default {
 
 <style lang="scss">
 @use '../styles/variables' as *;
+@use '../styles/mixin' as *;
+
 
 #footer-bottom {
     position: relative;
@@ -49,8 +51,9 @@ export default {
     background-color: #303030;
 
     .wrapper {
-        max-width: 1260px;
-        margin-inline: auto;
+
+        @include centered;
+
         padding-block: 25px;
         display: flex;
         justify-content: space-between;

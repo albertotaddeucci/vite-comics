@@ -32,14 +32,20 @@ export default {
     </nav>
 </template>
 
-<style>
+<style lang="scss">
+@use '../styles/mixin' as *;
+// 
+
+
 .container {
+
+    @include centered;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    max-width: 1260px;
-    margin-inline: auto;
+
     padding-block: 20px;
 
     ul {

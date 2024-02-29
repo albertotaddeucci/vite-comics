@@ -103,17 +103,19 @@ export default {
 
             </div>
 
+            <img id="logo-bg" src="/img/dc-logo-bg.png" alt="">
 
 
         </div>
 
-        <img id="logo-bg" src="/img/dc-logo-bg.png" alt="">
 
     </footer>
 </template>
 
 <style lang="scss">
 @use '../styles/variables' as *;
+@use '../styles/mixin' as *;
+
 
 footer {
     background-image: url(/img/footer-bg.jpg);
@@ -123,8 +125,8 @@ footer {
     position: relative;
 
     .wrapper {
-        max-width: 1260px;
-        margin-inline: auto;
+        position: relative;
+        @include centered;
         display: flex;
         gap: 20px;
 

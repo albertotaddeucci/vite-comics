@@ -22,15 +22,17 @@ export default {
     <AppCards></AppCards>
 </template>
 
-<style>
+<style = lang="scss">
+@use '../styles/mixin' as *;
+
 #content {
 
     background-color: black;
     color: white;
 
     .wrapper {
-        max-width: 1260px;
-        margin-inline: auto;
+
+        @include centered;
 
         div {
             padding-block: 30px;
