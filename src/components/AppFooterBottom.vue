@@ -45,6 +45,7 @@ export default {
 
 #footer-bottom {
     position: relative;
+    z-index: 2;
     background-color: #303030;
 
     .wrapper {

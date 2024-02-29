@@ -1,6 +1,11 @@
 <script>
+import AppCards from './AppCards.vue';
+
 export default {
     name: "AppContent",
+    components: { AppCards }
+
+
 }
 
 
@@ -14,6 +19,7 @@ export default {
             </div>
         </div>
     </div>
+    <AppCards></AppCards>
 </template>
 
 <style>

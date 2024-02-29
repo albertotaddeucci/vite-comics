@@ -131,8 +131,6 @@ footer {
         padding-block: 40px;
         font-size: 12px;
 
-
-
         .lists {
             display: flex;
             flex-direction: column;
@@ -156,6 +154,8 @@ footer {
         position: absolute;
         top: -100px;
         right: 0;
+        z-index: 1;
+
     }
 
 
