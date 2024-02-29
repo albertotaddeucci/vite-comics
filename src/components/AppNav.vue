@@ -46,7 +46,9 @@ export default {
     justify-content: space-between;
     align-items: center;
 
-
+    img {
+        height: 80px;
+    }
 
 
     ul {
@@ -56,10 +58,18 @@ export default {
         list-style: none;
         text-transform: uppercase;
 
+        li {
+
+            padding-block: 50px;
+
+        }
+
 
         a {
-            padding-block: 41px;
+            padding-block: 47px;
 
+            font-size: 12px;
+            font-weight: bold;
             text-decoration: none;
 
             &.active {

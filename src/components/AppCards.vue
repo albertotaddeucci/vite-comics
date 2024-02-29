@@ -71,13 +71,14 @@ export default {
     .wrapper {
         @include centered;
         display: flex;
+        justify-content: space-around;
 
         .card {
-            padding: 20px;
+            padding: 40px;
             display: flex;
             align-items: center;
-            gap: 20px;
-
+            gap: 15px;
+            font-size: 12px;
             text-transform: uppercase;
 
             img {
