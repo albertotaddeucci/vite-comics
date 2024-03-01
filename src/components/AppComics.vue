@@ -114,9 +114,7 @@ export default {
 
     background-color: $bgColor ;
 
-    button {
-        @
-    }
+    // button {}
 
 }
 
