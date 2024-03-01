@@ -1,10 +1,10 @@
 <script>
 import AppCards from './AppCards.vue';
+import AppComics from './AppComics.vue';
 
 export default {
     name: "AppContent",
-    components: { AppCards }
-
+    components: { AppCards, AppComics }
 
 }
 
@@ -12,32 +12,22 @@ export default {
 </script>
 
 <template>
-    <div id="content">
-        <div class="wrapper">
-            <div>
-                content
-            </div>
-        </div>
-    </div>
+    <div id="jumbo"></div>
+
+    <AppComics></AppComics>
+
     <AppCards></AppCards>
 </template>
 
 <style lang="scss">
 @use '../styles/mixin' as *;
 
-#content {
+#jumbo {
 
-    background-color: black;
+    background-image: url(/img/jumbotron.jpg);
+    background-size: cover;
+    height: 400px;
     color: white;
-
-    .wrapper {
-
-        @include centered;
-
-        div {
-            padding-block: 30px;
-        }
-    }
 
 }
 </style>

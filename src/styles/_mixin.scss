@@ -18,3 +18,20 @@
         cursor: pointer;
     }
 }
+
+
+@mixin btn-secondary($color) {
+    padding: 10px;
+    border: 2px solid $color;
+
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
