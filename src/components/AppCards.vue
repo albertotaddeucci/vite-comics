@@ -74,7 +74,7 @@ export default {
         justify-content: space-around;
 
         .card {
-            padding: 40px;
+            padding-block: 40px;
             display: flex;
             align-items: center;
             gap: 15px;

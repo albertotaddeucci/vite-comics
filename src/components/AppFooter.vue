@@ -9,7 +9,11 @@ export default {
             lists: [
                 {
                     title: "Dc comics",
-                    links: ["", "", "Movies", "Tv", "Games", "Videos", "News"]
+                    links: ["Characters", "Comics", "Movies", "Tv", "Games", "Videos", "News"]
+                },
+                {
+                    title: "Shop",
+                    links: ["Shop DC", "Shop DC Collection"]
                 },
                 {
                     title: "Dc",
@@ -21,10 +25,6 @@ export default {
                 {
                     title: "Sites",
                     links: ["DC", "MAD Magazine", "DC Kinds", "DC Universe", "DC Power Visa"]
-                },
-                {
-                    title: "Shop",
-                    links: ["Shop DC", "Shop DC Collection"]
                 },
 
 
@@ -41,69 +41,25 @@ export default {
 
         <div class="wrapper">
 
+            <div class="link-lists">
+
+                <div v-for="list in lists" class="lists">
+                    <h3>{{ list.title }}</h3>
+                    <ul>
+                        <li v-for="currentLink in list.links">{{ currentLink }}</li>
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+
             <div>
-                <div class="lists">
-                    <h3>DC COMICS</h3>
-                    <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>Tv</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
 
-                    </ul>
-
-
-                </div>
-                <div class="lists">
-                    <h3>SHOP</h3>
-                    <ul>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
-
-                    </ul>
-
-
-                </div>
-
+                <img id="logo-bg" src="/img/dc-logo-bg.png" alt="">
             </div>
-            <div class="lists">
-                <h3>DC</h3>
-                <ul>
-                    <li>Terms Of Use</li>
-                    <li>Privacy Policy (New)</li>
-                    <li>Ad Choices</li>
-                    <li>Advertising</li>
-                    <li>Jobs</li>
-                    <li>Subscriptions</li>
-                    <li>Talent Workshop</li>
-                    <li>CPSC Certificates</li>
-                    <li>Raitings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
-
-                </ul>
-
-
-            </div>
-            <div class="lists">
-                <h3>SITES</h3>
-                <ul>
-                    <li>DC</li>
-                    <li>MAD Magazine</li>
-                    <li>DC KIds</li>
-                    <li>DC Universe</li>
-                    <li>DC Power Visa</li>
-
-
-                </ul>
-
-
-            </div>
-
-            <img id="logo-bg" src="/img/dc-logo-bg.png" alt="">
 
 
         </div>
@@ -118,37 +74,64 @@ export default {
 
 
 footer {
-    position: relative;
+    // position: relative;
 
     background-image: url(/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+    height: 370px;
+    overflow: hidden;
+
+
 
     .wrapper {
-        position: relative;
         @include centered;
-        display: flex;
-        gap: 20px;
 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
         padding-block: 40px;
+
         font-size: 14px;
 
-        .lists {
+
+        .link-lists {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 20px;
 
-            line-height: 25px;
+            height: 100%;
+        }
+
+
+
+
+        .lists {
+
+
+            line-height: 20px;
 
             h3 {
+                margin-bottom: 16px;
+
+                text-transform: uppercase;
                 font-size: 18px;
-                margin-bottom: 20px;
             }
 
             ul {
                 list-style-type: none;
-                padding-bottom: 20px;
 
                 li {
                     color: $secondaryColor;
+
+                    &:hover {
+                        color: white;
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -157,15 +140,7 @@ footer {
         }
     }
 
-    #logo-bg {
-        position: absolute;
-        top: -70px;
-        right: 0;
-        z-index: 1;
 
-        transform: scale(1.1);
-
-    }
 
 
 }

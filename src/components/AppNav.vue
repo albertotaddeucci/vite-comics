@@ -35,7 +35,6 @@ export default {
 <style lang="scss">
 @use '../styles/variables' as *;
 @use '../styles/mixin' as *;
-// 
 
 
 .container {
@@ -68,6 +67,7 @@ export default {
         a {
             padding-block: 47px;
 
+            color: black;
             font-size: 12px;
             font-weight: bold;
             text-decoration: none;
