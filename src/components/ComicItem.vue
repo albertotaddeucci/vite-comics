@@ -30,8 +30,10 @@ export default {
     img {
         max-width: 185px;
         height: 185px;
-        padding-bottom: 20px;
         width: 100%;
+
+        margin-bottom: 10px;
+
         object-fit: cover;
         object-position: 0px 0px;
     }

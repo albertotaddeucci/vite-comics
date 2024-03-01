@@ -78,11 +78,12 @@ export default {
             display: flex;
             align-items: center;
             gap: 15px;
-            font-size: 12px;
             text-transform: uppercase;
 
             img {
                 width: 50px;
+                height: 50px;
+                object-fit: contain;
             }
 
             &:hover {

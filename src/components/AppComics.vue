@@ -118,11 +118,11 @@ export default {
     left: 0;
 
     span {
-        padding: 18px 30px;
+        padding: 14px 30px;
         background-color: $primaryColor;
         color: white;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 22px;
 
     }
 }
@@ -153,9 +153,6 @@ export default {
     gap: 30px;
 
     padding-bottom: 40px;
-
-
-
 
 }
 </style>
