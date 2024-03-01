@@ -17,9 +17,6 @@ export default {
 <template>
     <div class="comic">
         <img :src="comicImage" :alt="comicTitle">
-        <div>
-
-        </div>
         <span>{{ comicTitle }}</span>
     </div>
 </template>
@@ -36,6 +33,7 @@ export default {
         padding-bottom: 20px;
         width: 100%;
         object-fit: cover;
+        object-position: 0px 0px;
     }
 
 
